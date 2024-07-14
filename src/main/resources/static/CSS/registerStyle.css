@@ -1,0 +1,209 @@
+@charset "ISO-8859-1";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Madimi One', sans-serif;
+    color: #222831;
+}
+
+:lang(lo) {
+    font-family: 'Noto Sans Lao', sans-serif;
+}
+
+
+/* 
+    #EEEEEE
+    #00ADB5
+    #393E46
+    #222831 
+
+*/
+
+body {
+    width: 100%;
+    min-height: 130vh;
+    background: linear-gradient(to top left, #EEEEEE, #FFF5E0);
+    background-size: cover;
+    background-clip: border-box;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    overflow-x: hidden;
+}
+
+footer {
+    position: absolute;
+    bottom: 5%;
+    width: 95%;
+    background: #222831;
+    /* box-shadow: 0 0 30px #222831; */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* align-items: center; */
+    padding: 30px 0;
+}
+
+footer div {
+    width: 200px;
+    /* display: flex; */
+    /* height: 100px; */
+    /* border: 2px solid #FFF5E0; */
+}
+
+footer i {
+    font-size: 25px;
+}
+
+.contianer {
+    margin-top: 60px;
+    /* border: 2px solid #222831; */
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 10px #222831;
+    background: #fff;
+    height: 500px;
+    width: 800px;
+    position: relative;
+}
+
+.contianer form {
+    /*border: 2px solid #b50000;*/
+    /* box-shadow: 0 0 40px #EEEEEE; */
+    width: 400px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.con {
+    display: flex;
+    position: absolute;
+    width: 1200px;
+    /* border: 2px solid #00A; */
+    transform: translate(-50%, -50%);
+    left: 25%;
+    top: 50%;
+    transition: ease-out 0.2s;
+}
+
+.formimg {
+    width: 400px;
+    height: 500px;
+    /* background-size: cover; */
+    background: url('/IMAGE/kk2.jpeg');
+    background-size: cover;
+    /* position: absolute; */
+}
+
+.dip {
+    position: relative;
+    margin-top: 40px;
+    width: 300px;
+    border: 2px solid #222831;
+    border-bottom: 3px solid #222831;
+    border-radius: 10px;
+}
+
+.dip input {
+    width: 100%;
+    font-size: 25px;
+    background: transparent;
+    outline: none;
+    padding: 10px 15px;
+    border: none;
+}
+
+.dip label {
+    font-size: 25px;
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    color: #424c5c;
+    transform: translate(0, -50%);
+    pointer-events: none;
+    transition: ease-in-out 0.2s;
+}
+
+.dip input:focus~label,
+.dip input:valid~label {
+    top: -0%;
+    font-size: 20px;
+    left: 10px;
+    background: #fff
+}
+
+.con form button {
+	position: absolute;
+	bottom:40px;
+    width: 300px;
+    padding: 5px 0;
+    font-size: 30px;
+    border-radius: 20px;
+    border: none;
+    background: #00ADB5;
+    transition: ease-in-out 0.2s;
+    color: #424c5c;
+}
+.con form button:hover{
+    transform: scale(1.05);
+    color: #fff;
+    border: 2px solid #222831;
+}
+
+footer * {
+    color: #EEEEEE;
+}
+
+.formRegister .dip {
+    width: 150px;
+    border: 2px solid #222831;
+    border-bottom: 3px solid #222831;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.formRegister .dip input {
+    font-size: 20px;
+    padding: 6px 10px;
+}
+
+.formRegister .dip label {
+    font-size: 20px;
+}
+
+.formRegister .dip input:focus~label,
+.formRegister .dip input:valid~label {
+    top: -0%;
+    font-size: 14px;
+    left: 10px;
+    padding: 0 5px;
+    background: #fff;
+    border-radius: 20px;
+    color: #222831;
+    
+}
+.formRegister select{
+    font-size: 15px;
+    border: 2px solid #222831;
+    border-bottom: 3px solid #222831;
+    border-radius: 10px;
+    width: 150px;
+}
+
+.goclick{
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    gap: 10px;
+}
+.textclick{
+    color: #00ADB5;
+    text-decoration: underline;
+    cursor:pointer;
+}

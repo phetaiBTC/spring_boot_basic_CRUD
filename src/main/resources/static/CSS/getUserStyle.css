@@ -1,0 +1,43 @@
+@charset "ISO-8859-1";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Madimi One', sans-serif;
+    color: #222831;
+    font-size: 20px;
+}
+body{
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; */
+    margin-left:20px;
+}
+table{
+    
+}
+.butCreate{
+
+}
+th,td{
+    padding: 5px 20px; 
+}
+td button{
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin: 0 20px;
+    transition: 0.2s;
+    border: none;
+}
+td button:hover{
+    transform: scale(1.1);
+}
+td button a{
+    text-decoration: none;
+    color: #fff;
+}
+tr th{
+    color: #fff;
+}
